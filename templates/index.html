@@ -22,14 +22,16 @@
       <div class="content is-medium">
         <h1>{{ beer.name }}</h1>
         <h4>ABV: {{ beer.abv }} %</h4>
+        <h5>First brewed: {{ beer.first_brewed }}</h5>
         <p>{{ beer.description }}</p>
+        <p><strong>Yeast used:</strong> {{ beer.yeast }}</p>
         <p><strong>Pairs well with:</strong></p>
         {{ beer.food_pairing }}
       </div>
     </div>
   </section>
-  <div class="container">
-    <button class="button is-large is-dark" onClick="window.location.reload();">Go!</button>
+  <div class="container box has-text-centered">
+    <button class="button is-large is-dark is-rounded" onClick="window.location.reload();">Next beer!</button>
   </div>
   </body>
   <footer class="footer">
