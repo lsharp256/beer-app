@@ -1,5 +1,5 @@
 
-from beer-app.main import app
+from beer-app import app
   
 if __name__ == "__main__":
         app.run()
